@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* body {
+ overflow-x: hidden;
+} */
+
+.slides-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slides-container::-webkit-scrollbar {
+    display: none;
+}
+
+.sub-group:hover > ul {
+    display: block;
+}
+
+.slider-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+.slider-track:hover {
+    animation-play-state: paused;
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.tab-wrapper {
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 12px;
+    background: #9299af;
+    color: #fff;
+    border: 2px solid #9299af;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tab.active {
+    background: #0468b1;
+    border-color: #0468b1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tab:hover {
+    color: #0468b1;
+    background: #fff;
+    border-color: #0468b1;
+}
+
+.tab-content {
+    padding: 20px;
+    border-radius: 6px;
+}

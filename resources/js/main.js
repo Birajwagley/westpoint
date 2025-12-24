@@ -1,0 +1,4 @@
+
+gsap.registerPlugin(ScrollTrigger);
+
+

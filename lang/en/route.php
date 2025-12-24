@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'home' => 'Home',
+    'school_profile' => 'School Profile',
+    'quick_link' => 'Quick Link',
+    'facility' => 'Facilities',
+    'clubs' => 'Club & ECA',
+    'usp' => 'USP',
+    'gallery' => 'Gallery',
+    'download' => 'Downloads',
+    'academic_levels' => 'Academic Levels',
+    'publication' => 'Publications',
+    'volunteer' => 'Volunteer',
+    'career' => 'Career',
+    'contact_us' => 'Contact Us',
+    'faq' => 'Frequently Asked Questions',
+    'team' => 'Team',
+    'awards' => 'Awards',
+    'achievements' => 'Achievements',
+    'site_map' => 'Site Map',
+    'privacy_statement' => 'Privacy Statement',
+    'terms_and_conditions' => 'Terms and Conditions',
+    'school_admission' => 'School Level Online Admission',
+    'college_admission' => 'College Level Online Admission',
+];

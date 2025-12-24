@@ -1,0 +1,45 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('careers', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('slug')->unique()->nullable();
+            $table->string('name_en');
+            $table->string('name_np')->unique()->nullable();
+
+            $table->unsignedBigInteger('designation_id')->nullable();
+            $table->foreign('designation_id')->references('id')->on('designations')->onDelete('cascade')->onUpdate('cascade');
+
+            $table->string('timing');
+            $table->integer('number_of_post');
+            $table->date('valid_date');
+
+            $table->longText('requirement_en');
+            $table->longText('requirement_np')->nullable();
+
+            $table->integer('display_order');
+            $table->boolean('is_published')->default(false);
+
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('careers');
+    }
+};
