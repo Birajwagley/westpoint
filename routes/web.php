@@ -18,6 +18,9 @@ Route::middleware('guest')->group(function () {
 
 Route::middleware('language')->group(function () {
     Route::get('/', [FrontendController::class, 'homepage'])->name('home');
+    Route::get('/rough', [FrontendController::class, 'rough'])->name('rough');
+
+
     Route::get('/home', [FrontendController::class, 'homepage'])->name('home');
 
     Route::get('/school-profile', [FrontendController::class, 'aboutUs'])->name('about-us');

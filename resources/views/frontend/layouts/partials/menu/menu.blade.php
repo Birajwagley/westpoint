@@ -16,12 +16,14 @@
     <div class="px-8 h-full flex items-center justify-around">
 
         {{-- Logos --}}
-        <div class="flex items-center gap-6">
+        <div class="flex items-center gap-2">
             <a href="{{ route('home') }}">
-                <img src="{{ $setting->primary_logo ?? '' }}" alt="GBBS" class="h-16 object-contain">
+                <img src="{{ $setting->primary_logo ? asset($setting->primary_logo) : asset('assets/frontend/images/header/westpoint-logo.png') }}"
+                    alt="WPHS" alt="WPHS" class="h-16 object-contain border-r-2 border-secondary">
             </a>
             <a href="{{ route('home') }}">
-                <img src="{{ $setting->experience_logo ?? '' }}" alt="GBBS" class="h-16 object-contain">
+                <img src="{{ $setting->experience_logo ? asset($setting->experience_logo) : asset('assets/frontend/images/header/years-of-experience.png') }}"
+                    alt="WPHS" class="h-14 object-contain">
             </a>
         </div>
 

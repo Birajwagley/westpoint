@@ -6,7 +6,19 @@
     $importantNotices = $publicationCategory->where('id', 2)->first();
 @endphp
 
-<div id="upcomingEvent-section" class="bg-primary w-full font-poppins flex justify-center overflow-x-hidden">
+
+<div id="upcomingEvent-section"
+    class="relative w-full font-poppins flex justify-center overflow-x-hidden  py-20 lg:py-20">
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="{{ asset('assets/frontend/images/about-us/about-us-bg.png') }}" alt="About Us Background"
+            class="w-full h-full object-cover" />
+
+        <!-- Semi-transparent Overlay -->
+        <div class="absolute inset-0 bg-primary/90"></div>
+    </div>
+
+
     <div class="w-full lg:w-[70%] px-6 md:px-20 lg:px-2 py-16">
 
         <div class="flex flex-col lg:flex-row gap-16">
@@ -14,9 +26,15 @@
             <!-- ======================= Upcoming Events ======================= -->
             <div class="flex-1">
                 <div id="upcoming-head1" class="flex justify-between items-center mb-10">
-                    <h2 class="text-xl font-semibold text-white">
+
+                    <h2 class="uppercase tracking-[0.3em] font-semibold text-white text-sm md:text-base">
                         {{ app()->getLocale() == 'en' ? $upcommingEvents->name_en : $upcommingEvents->name_np ?? $upcommingEvents->name_en }}
                     </h2>
+                    <div class="flex gap-1.5">
+                        <span class="w-8 h-3 bg-white"></span>
+                        <span class="w-4 h-3 bg-white"></span>
+                    </div>
+
 
                     <a href="{{ route('publication') }}"
                         class="group flex items-center text-white font-semibold hover:text-accent">
@@ -53,9 +71,15 @@
             <!-- ======================= Important Notices ======================= -->
             <div class="flex-1">
                 <div id="upcoming-head1" class="flex justify-between items-center mb-10">
-                    <h2 class="text-xl font-semibold text-white">
+                    <h2 class="uppercase tracking-[0.3em] font-semibold text-white text-sm md:text-base">
                         {{ app()->getLocale() == 'en' ? $importantNotices->name_en : $importantNotices->name_np ?? $importantNotices->name_en }}
                     </h2>
+                    <div class="flex gap-1.5">
+                        <span class="w-8 h-3 bg-white"></span>
+                        <span class="w-4 h-3 bg-white"></span>
+                    </div>
+
+
 
                     <a href="{{ route('publication') }}"
                         class="group flex items-center text-white font-semibold hover:text-accent">
@@ -71,9 +95,9 @@
 
                                 <!-- Date Box -->
                                 <div
-                                    class="w-28 h-28 flex items-center justify-center rounded-xl bg-secondary p-2 text-center">
+                                    class="w-28 h-28 flex items-center justify-center rounded-xl bg-white hover:bg-secondary/60 p-2 text-center">
                                     <span
-                                        class="font-semibold text-base text-accent group-hover:text-accent transition">
+                                        class="font-semibold text-base text-primary group-hover:text-accent transition">
                                         {{ app()->getLocale() == 'en'
                                             ? Carbon::parse($notice->published_date)->format('d F Y')
                                             : LaravelNepaliDate::from($notice->published_date)->toNepaliDate('j F Y', 'np') }}
@@ -97,7 +121,7 @@
 
                                 <!-- Thumbnail -->
                                 <div
-                                    class="w-28 h-28 flex items-center justify-center rounded-xl bg-secondary p-2 overflow-hidden">
+                                    class="w-28 h-28 flex items-center justify-center rounded-xl bg-white hover:bg-secondary/60 p-2 overflow-hidden">
                                     <img src="{{ asset($notice->thumbnail_image) }}"
                                         class="w-full h-full object-cover rounded-lg" alt="Notice Thumbnail">
                                 </div>
@@ -110,6 +134,7 @@
 
         </div>
     </div>
+</div>
 </div>
 
 

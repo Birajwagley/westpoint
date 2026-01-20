@@ -11,7 +11,7 @@
     </style>
 @endpush
 
-<footer id="footer-section" class="bg-primary text-white relative !bottom-0 overflow-hidden">
+<footer id="footer-section" class="bg-[#102E3E] text-white relative !bottom-0 overflow-hidden">
     <!-- Main Footer Content -->
     <div class="relative py-12 px-6 pb-40 lg:pb-20 -mb-20 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-8">
@@ -19,11 +19,15 @@
             <!-- Left Section - Logos and Description -->
             <div id="footer-lefty" class="footer-lefty lg:col-span-3">
                 <!-- Logos -->
-                <div class="flex items-center gap-4 mb-6">
-                    <img src="{{ $setting->primary_logo ? $setting->primary_logo : asset('assets/frontend/images/footer/main logo.png') }}"
-                        alt="GBBS" class="w-20 h-20">
-                    <img src="{{ $setting->experience_logo ? $setting->experience_logo : asset('assets/frontend/images/footer/50years.png') }}"
-                        alt="GBBS" class="w-20 h-20">
+                <div class="flex items-center gap-2">
+                    <a href="{{ route('home') }}">
+                        <img src="{{ $setting->primary_logo ? asset($setting->primary_logo) : asset('assets/frontend/images/footer/white-logo.png') }}"
+                            alt="WPHS" alt="WPHS" class="h-16 object-contain border-r-2 border-white">
+                    </a>
+                    <a href="{{ route('home') }}">
+                        <img src="{{ $setting->experience_logo ? asset($setting->experience_logo) : asset('assets/frontend/images/footer/white-years-of-experience.png') }}"
+                            alt="WPHS" class="h-14 object-contain">
+                    </a>
                 </div>
                 <!-- Description -->
                 <a href="{{ route('about-us') }}" target="__blank" class="text-gray-200 text-sm leading-relaxed">
@@ -48,7 +52,7 @@
                         <img src="{{ asset('assets/frontend/images/homepage/Callsupport.png') }}" alt="Call Support"
                             class="w-8 h-8 mt-1">
                         <div>
-                            <h3 class="text-yellow-400 font-semibold text-lg mb-2">{{ __('homepage.contact_us_247') }}
+                            <h3 class="text-white font-semibold text-lg mb-2">{{ __('homepage.contact_us_247') }}
                             </h3>
                             <div class="flex flex-col">
                                 <a href="tel:{{ json_decode($setting->contact1)->contact ?? '' }}"
@@ -63,7 +67,7 @@
 
                     <!-- Social Media -->
                     <div>
-                        <h3 class="text-yellow-400 font-semibold text-lg mb-4">{{ __('homepage.follow_us') }}</h3>
+                        <h3 class="text-white font-semibold text-lg mb-4">{{ __('homepage.follow_us') }}</h3>
                         <div class="flex items-center gap-3">
                             @if ($setting->facebook)
                                 <a href="{{ $setting->facebook ?? 'void:;' }}" target="_blank"
@@ -109,7 +113,7 @@
                 <div id="footer-rigty" class="footer-rigty grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Quick Links -->
                     <div>
-                        <h3 class="text-yellow-400 font-semibold text-lg mb-4">
+                        <h3 class="text-white font-semibold text-lg mb-4">
                             {{ __('homepage.quick_links') }}
                         </h3>
                         <div class="grid grid-cols-2 gap-6">
@@ -119,7 +123,7 @@
                                         <li>
                                             <a href="{{ $link->menus != null ? route($menu->slug) : $link->url }}"
                                                 target="_blank"
-                                                class="text-gray-200 text-sm hover:text-yellow-400 flex items-center gap-2">
+                                                class="text-gray-200 text-sm hover:text-white flex items-center gap-2">
                                                 <i class="fas fa-arrow-right text-xs"></i>
                                                 {{ app()->getLocale() == 'en' ? $link->name_en : $link->name_np ?? $link->name_en }}
                                             </a>
@@ -132,7 +136,7 @@
 
                     <!-- Newsletter -->
                     <div>
-                        <h3 class="text-yellow-400 font-semibold text-lg mb-2">{{ __('homepage.subscribe_us') }}</h3>
+                        <h3 class="text-white font-semibold text-lg mb-2">{{ __('homepage.subscribe_us') }}</h3>
                         <p class="text-gray-200 text-sm mb-4">{{ __('homepage.stay_in_touch') }}</p>
                         <div class="flex gap-2">
                             <form class="space-y-4 w-full" action="{{ route('news-letter.subscription') }}"
@@ -140,7 +144,7 @@
                                 @csrf
 
                                 <input type="email" placeholder="Email" id="newsLetterEmail" name="email"
-                                    class="w-full flex-1 px-4 py-2 rounded bg-white text-gray-800 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                                    class="w-96 flex-1 px-4 py-2 rounded bg-white text-gray-800 placeholder-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white">
 
                                 <div>
                                     {!! NoCaptcha::renderJs() !!}
@@ -151,7 +155,7 @@
                                 </div>
 
                                 <button type="button" id="newsLetterBtn"
-                                    class="bg-yellow-400 hover:bg-yellow-500 text-custom-green px-6 py-2 rounded font-semibold text-sm transition">
+                                    class="bg-white hover:bg-yellow-500 text-custom-green px-6 py-2 rounded font-semibold text-sm transition">
                                     {{ __('homepage.submit') }}
                                 </button>
                             </form>
@@ -160,12 +164,21 @@
                 </div>
             </div>
         </div>
+        <div class="border-t border-navy-foreground/20 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div
+                    class="container-wide py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/50">
+                    <p class="text-sm opacity-80">© 2026 Academic Excellence. All rights reserved.</p>
+                </div>
+                <p>Designed with ❤️ for Quality Education</p>
+                <div class="flex gap-6 text-sm">
+                    <a href="#" class="opacity-80 hover:opacity-100 transition-all">Privacy Policy</a>
+                    <a href="#" class="opacity-80 hover:opacity-100 transition-all">Terms of Service</a>
+                    <a href="#" class="opacity-80 hover:opacity-100 transition-all">Accessibility</a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- Background Image -->
-    <div class=" bottom-0 left-0 right-0 w-full z-0 footer-image h-[20vh] md:h-fit">
-        <img src="{{ asset('assets/frontend/images/homepage/area.png') }}" alt="School Building"
-            class="w-full h-full object-cover object-bottom">
     </div>
 </footer>
 

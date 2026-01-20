@@ -2,7 +2,7 @@
 <header
     class="lg:hidden flex items-center justify-between px-4 py-3 bg-white shadow-sm border-b border-gray-200 rounded-md">
     <h1 class="text-lg font-semibold text-gray-800 tracking-tight">
-        GBBS
+        WPHS
     </h1>
 
     <button @click="sidebarOpen = !sidebarOpen"

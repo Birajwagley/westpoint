@@ -16,7 +16,7 @@
 
                     <div class="w-full lg: lg:w-72 h-52 relative">
                         <img class="w-full h-full object-cover rounded-xl" src="{{ asset($data->thumbnail_image) }}"
-                            alt="GBBS" />
+                            alt="WPHS" />
 
                         <div
                             class="absolute bottom-0 right-[-2px] w-0 h-0 border-l-[70px] border-l-[#205246] border-t-[70px] border-t-transparent [transform:rotateY(541deg)] rounded-bl-xl">

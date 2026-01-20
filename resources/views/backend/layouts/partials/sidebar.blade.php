@@ -16,9 +16,10 @@
         <a href="{{ env('APP_URL') }}">
             <div class="flex items-center space-x-3">
                 <img x-show="!sidebarCollapsed || sidebarHovered"
-                    src="{{ asset('assets/backend/images/logo.png') }}" alt="avatar" class="w-12 h-12" />
-                <div x-show="!sidebarCollapsed || sidebarHovered" class="text-white font-semibold text-2xl">
-                    GBBS
+                    src="{{ asset('assets/frontend/images/footer/white-logo.png') }}" alt="avatar"
+                    class="h-12 object-contain" />
+                <div x-show="!sidebarCollapsed || sidebarHovered" class="text-white font-semibold text-xl">
+                    WPHS
                 </div>
             </div>
         </a>
@@ -58,8 +59,7 @@
 
 
     <!-- Navigation -->
-    <nav class="flex-1 px-2 py-3 overflow-y-auto border-r border-white/20  bg-primary"
-        aria-label="Sidebar navigation">
+    <nav class="flex-1 px-2 py-3 overflow-y-auto border-r border-white/20  bg-primary" aria-label="Sidebar navigation">
         <!-- General Reports -->
 
         <ul class="space-y-2">
@@ -113,10 +113,8 @@
                             <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Navigation</span>
                         </span>
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
-                            class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -157,8 +155,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-ellipsis-vertical"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Drawer</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Drawer</span>
                                     </a>
                                 </li>
                             </ul>
@@ -190,8 +187,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -206,8 +202,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-users-between-lines"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Department</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Department</span>
                                     </a>
                                 </li>
                             </ul>
@@ -223,8 +218,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-users-gear"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Designation</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Designation</span>
                                     </a>
                                 </li>
                             </ul>
@@ -238,8 +232,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-user-group"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Team</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Team</span>
                                     </a>
                                 </li>
                             </ul>
@@ -274,8 +267,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -290,8 +282,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-layer-group"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Group</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Group</span>
                                     </a>
                                 </li>
                             </ul>
@@ -305,8 +296,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-book"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Subject</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Subject</span>
                                     </a>
                                 </li>
                             </ul>
@@ -320,8 +310,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-people-roof"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Classes</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Classes</span>
                                     </a>
                                 </li>
                             </ul>
@@ -350,8 +339,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-id-badge"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Faculty</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Faculty</span>
                                     </a>
                                 </li>
                             </ul>
@@ -389,8 +377,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -403,8 +390,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-panorama"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Slider</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Slider</span>
                                     </a>
                                 </li>
                             </ul>
@@ -417,8 +403,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-panorama"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Popup</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Popup</span>
                                     </a>
                                 </li>
                             </ul>
@@ -464,8 +449,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-images"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Gallery</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Gallery</span>
                                     </a>
                                 </li>
                             </ul>
@@ -481,8 +465,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-link"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Link</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Link</span>
                                     </a>
                                 </li>
                             </ul>
@@ -498,8 +481,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-chart-simple"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Statistics</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Statistics</span>
                                     </a>
                                 </li>
                             </ul>
@@ -513,8 +495,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa-solid fa-graduation-cap"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Alumni</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Alumni</span>
                                     </a>
                                 </li>
                             </ul>
@@ -530,8 +511,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-envelope"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Volunteer</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Volunteer</span>
                                     </a>
                                 </li>
                             </ul>
@@ -560,8 +540,7 @@
 
         {{-- publication --}}
         @php
-            $isAuthSection =
-                request()->routeIs('publication.*') || request()->routeIs('publication-category.*');
+            $isAuthSection = request()->routeIs('publication.*') || request()->routeIs('publication-category.*');
         @endphp
 
         @canany(['publication', 'publication category'])
@@ -578,8 +557,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -592,8 +570,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-envelope"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Publication</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Publication</span>
                                     </a>
                                 </li>
                             </ul>
@@ -607,8 +584,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-envelopes-bulk"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Publication
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Publication
                                             Category</span>
                                     </a>
                                 </li>
@@ -638,8 +614,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -667,8 +642,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-download"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Download</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Download</span>
                                     </a>
                                 </li>
                             </ul>
@@ -697,8 +671,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -757,14 +730,12 @@
                             :class="{ 'justify-center w-full': sidebarCollapsed && !sidebarHovered }">
                             <i class="fa fa-folder-open"></i>
 
-                            <span x-show="!sidebarCollapsed || sidebarHovered"
-                                class="truncate">Applications</span>
+                            <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Applications</span>
                         </span>
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -779,8 +750,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-briefcase"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Admission</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Admission</span>
                                     </a>
                                 </li>
                             </ul>
@@ -795,8 +765,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-briefcase"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Career</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Career</span>
                                     </a>
                                 </li>
                             </ul>
@@ -908,9 +877,7 @@
         <!-- Authentication -->
         @php
             $isAuthSection =
-                request()->routeIs('user.*') ||
-                request()->routeIs('role.*') ||
-                request()->routeIs('permission.*');
+                request()->routeIs('user.*') || request()->routeIs('role.*') || request()->routeIs('permission.*');
         @endphp
 
         @canany(['user', 'role', 'permission'])
@@ -929,8 +896,7 @@
                         <svg x-show="!sidebarCollapsed || sidebarHovered" :class="{ 'rotate-180': authMenuOpen }"
                             class="w-4 h-4 transition-transform" fill="none" stroke="currentColor"
                             viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 9l-7 7-7-7" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                         </svg>
                     </button>
 
@@ -943,8 +909,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-user"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Users</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Users</span>
                                     </a>
                                 </li>
                             </ul>
@@ -958,8 +923,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-user-check"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Role</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Role</span>
                                     </a>
                                 </li>
                             </ul>
@@ -973,8 +937,7 @@
                                         :class="{ 'justify-center': sidebarCollapsed && !sidebarHovered }">
                                         <i class="fa fa-user-lock"></i>
 
-                                        <span x-show="!sidebarCollapsed || sidebarHovered"
-                                            class="truncate">Permission</span>
+                                        <span x-show="!sidebarCollapsed || sidebarHovered" class="truncate">Permission</span>
                                     </a>
                                 </li>
                             </ul>

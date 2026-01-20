@@ -3,7 +3,7 @@
     style="background-image: url('{{ $setting->school_overview_image
         ? asset($setting->school_overview_image)
         : asset('assets/frontend/images/header/breadcrumb.jpg') }}');"
-    aria-label="GBBS">
+    aria-label="WPHS">
 
     <!-- Overlay -->
     <div class="absolute inset-0 bg-gradient-to-b from-black/60 to-black/40"></div>

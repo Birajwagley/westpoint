@@ -1,4 +1,4 @@
-<div id="upperNav" class="hidden lg:block bg-secondary h-[50px] w-full xl:flex flex-row justify-between">
+<div id="upperNav" class="hidden lg:block bg-primary h-[50px] w-full xl:flex flex-row justify-between">
     <div class="px-8 h-full flex items-center justify-between">
         <div class="flex items-center gap-8 text-white text-sm">
             <a href="mailto:{{ isset($setting->email) ? json_decode($setting->email)->email : '' }}"
@@ -19,7 +19,7 @@
     </div>
 
     <div
-        class="flex justify-evenly text-center items-center gap-4 text-white rounded-tl-[100px] bg-primary pl-20 w-[520px]">
+        class="flex justify-evenly text-center items-center gap-4 text-white rounded-tl-[100px] bg-secondary pl-20 w-[520px]">
         <span class="text-sm font-semibold">{{ __('homepage.follow_us') }}</span>
 
         <!-- Social icons container -->

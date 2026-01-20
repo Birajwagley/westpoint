@@ -36,7 +36,7 @@
         {{-- principal image --}}
         <div class="flex-col flex space-y-6 items-center w-full sm:w-4/5 md:w-[100%] lg:w-[48%] p-4 mx-auto">
             <div class="w-full h-96 rounded-lg md:w-[525px] md:h-[400px] object-contain">
-                <img src="{{ $messageFrom->image }}" class="w-full rounded-lg h-full" alt="GBBS" />
+                <img src="{{ $messageFrom->image }}" class="w-full rounded-lg h-full" alt="WPHS" />
             </div>
         </div>
 

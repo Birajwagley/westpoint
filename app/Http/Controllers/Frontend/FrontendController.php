@@ -125,6 +125,13 @@ class FrontendController extends Controller
         return view('frontend.about-us', compact('aboutUs', 'cronologies', 'cards', 'setting'));
     }
 
+    public function rough()
+    {
+
+
+        return view('frontend.rough');
+    }
+
     public function lateGyanBahadurYakthumba()
     {
         $messageFrom = MessageFrom::where('slug', MessageFromTypeEnum::GYANBAHADURYAKTHUMBA->value)->first();

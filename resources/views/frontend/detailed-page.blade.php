@@ -56,7 +56,7 @@
 
                 <!-- Featured Image -->
                 <div class="mb-8">
-                    <img src="{{ asset($menu->page->banner_image ?? '') }}" alt="GBBS"
+                    <img src="{{ asset($menu->page->banner_image ?? '') }}" alt="WPHS"
                         class="w-full h-[350px] md:h-[420px] object-cover rounded-xl shadow-md" />
                 </div>
 

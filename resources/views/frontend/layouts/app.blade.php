@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="{{ asset($setting->favicon ?? 'assets/images/header/gyanodaya-logo.png') }}">
-    <title>GBBS :: @yield('title')</title>
+    <title>WPHS :: @yield('title')</title>
 
     @include('layouts.partials.styles')
 
@@ -20,7 +20,7 @@
 
 <body>
     <!-- Preloader -->
-     <div id="preloader">
+     {{-- <div id="preloader">
         <div class="loading">
             <span></span>
             <span></span>
@@ -28,7 +28,7 @@
             <span></span>
             <span></span>
         </div>
-    </div>
+    </div> --}}
 
     @if (!Route::is('home') && isset($drawerNavigations))
         {{-- drawer navigation --}}

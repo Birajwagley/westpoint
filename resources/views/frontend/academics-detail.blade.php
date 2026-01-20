@@ -82,7 +82,7 @@
     <div
         class="container mx-auto px-4 flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-16 my-20">
         <div class=" w-full md:w-1/2 flex justify-center items-center">
-            <img src="{{ asset($academicLevel->thumbnail_image) }}" alt="GBBS"
+            <img src="{{ asset($academicLevel->thumbnail_image) }}" alt="WPHS"
                 class=" top-0 left-0 w-[200px] sm:w-[600px] h-auto rounded-2xl shadow-lg object-cover transform transition duration-300">
         </div>
 
@@ -132,7 +132,7 @@
                         @foreach ($images as $image)
                             <div class="flex flex-col items-center">
                                 <img src="{{ asset($image) }}" class="h-40 rounded-xl shadow-md object-contain"
-                                    alt="GBBS">
+                                    alt="WPHS">
                             </div>
                         @endforeach
                     </div>
@@ -206,7 +206,7 @@
                                     class="w-full justify-between swiper-slide relative lg:max-w-[303px] flex flex-col border-none h-[412px] rounded-xl shadow-lg bg-white transition-all duration-300 ease-in-out">
                                     <div class="w-full h-40 relative">
                                         <img class="w-full h-full object-cover rounded-tl-xl rounded-tr-xl"
-                                            src="{{ asset($usp->thumbnail_image) }}" alt="GBBS" />
+                                            src="{{ asset($usp->thumbnail_image) }}" alt="WPHS" />
                                         <div
                                             class="bg-secondary absolute bottom-[-1.5rem] left-6 flex items-center justify-center w-12 h-12 rounded-full">
                                             <i class="fa fa-quote-left text-accent fa-xl"></i>

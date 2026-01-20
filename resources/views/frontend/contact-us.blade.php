@@ -107,7 +107,7 @@
 
             <section
                 class="w-full lg:w-2/5 relative overflow-hidden text-white rounded-2xl shadow-lg flex flex-col justify-center">
-                <img src="{{ asset('assets/frontend/images/homepage/homepg.jpg') }}" alt="GBBS"
+                <img src="{{ asset('assets/frontend/images/homepage/homepg.jpg') }}" alt="WPHS"
                     class="absolute inset-0 w-full h-full object-cover opacity-90 rounded-2xl">
                 <div class="absolute inset-0 bg-primary opacity-80 rounded-2xl"></div>
 
@@ -123,7 +123,7 @@
                         {{-- Email --}}
                         <div class="flex items-start gap-4 sm:gap-5">
                             <div class="w-10 sm:w-12 md:w-14 flex-shrink-0">
-                                <img src="{{ asset('assets/frontend/images/icon/email.png') }}" alt="GBBS"
+                                <img src="{{ asset('assets/frontend/images/icon/email.png') }}" alt="WPHS"
                                     class="w-full h-auto">
                             </div>
                             <div>
@@ -141,7 +141,7 @@
                         {{-- Phone --}}
                         <div class="flex items-start gap-4 sm:gap-5">
                             <div class="w-10 sm:w-12 md:w-14 flex-shrink-0">
-                                <img src="{{ asset('assets/frontend/images/icon/phone.png') }}" alt="GBBS"
+                                <img src="{{ asset('assets/frontend/images/icon/phone.png') }}" alt="WPHS"
                                     class="w-full h-auto">
                             </div>
                             <div>
@@ -155,7 +155,7 @@
                         {{-- Social --}}
                         <div class="flex items-start gap-4 sm:gap-5">
                             <div class="w-10 sm:w-12 md:w-14 flex-shrink-0">
-                                <img src="{{ asset('assets/frontend/images/icon/community.png') }}" alt="GBBS"
+                                <img src="{{ asset('assets/frontend/images/icon/community.png') }}" alt="WPHS"
                                     class="w-full h-auto">
                             </div>
                             <div>

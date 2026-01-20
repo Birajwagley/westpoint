@@ -15,6 +15,12 @@
     {{-- Quick Navigation --}}
     @include('frontend.homepage.partials.quick-navigation')
 
+    {{-- Acadmic Level --}}
+    @include('frontend.homepage.partials.academic-level')
+
+    <!-- Introduction Section -->
+    @include('frontend.homepage.partials.introduction')
+
     {{-- About Us --}}
     @include('frontend.homepage.partials.about-us', [
         'displayButton' => true,
@@ -24,11 +30,9 @@
     <!-- Why Choose Us -->
     @include('frontend.homepage.partials.why-choose-us')
 
-    <!-- Introduction Section -->
-    @include('frontend.homepage.partials.introduction')
 
     {{-- Slider --}}
-    @include('frontend.homepage.partials.slider')
+    {{-- @include('frontend.homepage.partials.slider') --}}
 
     {{-- Academic Excellence --}}
     @include('frontend.homepage.partials.academic-excellence')
@@ -40,13 +44,16 @@
     @include('frontend.homepage.partials.testimonials')
 
     {{-- Gallery --}}
-    @include('frontend.homepage.partials.gallery')
+    {{-- @include('frontend.homepage.partials.gallery') --}}
+
+        <!-- Gallery Section -->
+    @include('frontend.homepage.partials.gallery-design')
 
     <!-- Achievements -->
-    @include('frontend.homepage.partials.achivements')
+    {{-- @include('frontend.homepage.partials.achivements') --}}
 
     {{-- volunteers --}}
-    @include('frontend.homepage.partials.volunteers')
+    {{-- @include('frontend.homepage.partials.volunteers') --}}
 
     <!-- Popups -->
     @include('frontend.homepage.partials.popup')

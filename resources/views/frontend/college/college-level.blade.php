@@ -80,7 +80,7 @@
     <!-- 📘 Intro Section -->
     <!-- ============================= -->
     <div class="px-4 sm:px-8 md:px-16 lg:px-28 py-10">
-        <img src="{{ asset($academicLevel->thumbnail_image) }}" alt="GBBS"
+        <img src="{{ asset($academicLevel->thumbnail_image) }}" alt="WPHS"
             class="w-full sm:w-72 lg:w-[500px] mb-2 lg:float-left lg:mr-6 lg:mb-2 rounded-2xl shadow-lg object-cover transform transition duration-300">
 
         <h3 class="text-primary text-lg sm:text-xl font-bold uppercase tracking-wide">
@@ -129,7 +129,7 @@
                         @foreach ($images as $image)
                             <div class="flex flex-col items-center">
                                 <img src="{{ asset($image) }}" class="h-40 rounded-xl shadow-md object-contain"
-                                    alt="GBBS">
+                                    alt="WPHS">
                             </div>
                         @endforeach
                     </div>

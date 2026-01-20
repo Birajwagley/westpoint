@@ -2,7 +2,7 @@
     class="text-sm text-gray-700 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 px-2 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3 md:py-4  border-t border-gray-200 rounded-b-2xl">
     <div class="text-center sm:text-left">
         <a href="#" class="text-primary font-semibold hover:underline">
-            GBBS
+            WPHS
         </a>
         <span class="ml-1">&copy; {{ date('Y') }}</span>
     </div>

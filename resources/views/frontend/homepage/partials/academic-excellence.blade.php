@@ -3,23 +3,23 @@
 @endphp
 
 <div id="blackbox-section" class=" w-full h-auto relative p-4 md:p-8 font-poppins">
-    <div class="max-w-7xl my-16 lg:mb-60 mx-auto">
+    <div class="max-w-7xl my-10 mx-auto">
         <!-- ------------------------- Top Box Section --------------------------- -->
-        <div id="blackbox-top" class="blackbox-top max-w-4xl mx-auto">
+        <div id="blackbox-top" class="blackbox-top max-w-8xl mx-auto">
             <div class="relative rounded-3xl overflow-hidden text-white p-8 md:p-12">
                 <!-- Background image -->
                 <img src="{{ asset('assets/frontend/images/homepage/homepg.jpg') }}"
                     class="absolute inset-0 w-full h-full object-cover object-top opacity-90">
 
                 <!-- Strong color overlay -->
-                <div class="absolute inset-0 bg-primary opacity-95"></div>
+                <div class="absolute inset-0 bg-primary/70"></div>
 
                 <!-- Content -->
-                <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-8 text-center">
                     @foreach ($statistics as $statistic)
                         <div class="flex flex-col items-center">
                             <i class="{{ $statistic->icon }} fa-3x mb-3"></i>
-                            <p class="text-3xl font-bold text-custom-yellow">{{ $statistic->count }}+</p>
+                            <p class="text-3xl font-bold text-white">{{ $statistic->count }}+</p>
                             <p class="mt-2 text-lg">
                                 {{ app()->getLocale() == 'en' ? $statistic->name_en : (isset($statistic->name_np) ? $statistic->name_np : $statistic->name_en) }}
                             </p>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <!-- ------------------------- Bottom Box Section --------------------------- -->
-        <div id="blackbox-bottom"
+        {{-- <div id="blackbox-bottom"
             class="blackbox-bottom bg-transparent lg:relative lg:top-1/2 w-full h-auto p-4 md:p-5 mt-8">
             <div
                 class="relative flex flex-col md:h-[273px] py-[40px] px-[20px] md:px-[40px] items-start rounded-3xl bg-primary md:flex-row justify-between mb-4 overflow-hidden">
@@ -52,7 +52,7 @@
 
                     <div class="flex-shrink-0 mt-6 md:mt-0">
                         <a href="{{ route('academics') }}"
-                            class="bg-secondary hover:bg-[#024a3a] text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                            class="bg-white hover:bg-secondary text-primary font-semibold py-3 px-6 rounded-lg transition duration-300">
                             {!! __('homepage.learn_more') !!}
                         </a>
                     </div>
@@ -91,7 +91,7 @@
                     </div>
                 @endforeach
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 

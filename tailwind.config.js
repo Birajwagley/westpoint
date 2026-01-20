@@ -36,8 +36,8 @@ export default {
                 "4xl": "2560px", // optional
             },
             colors: {
-                primary: "#044335",
-                secondary: "#03624C",
+                primary: "#990400",
+                secondary: "#343434",
                 accent: "#FFF32F",
                 background: {
                     primary: "#ffffff",
@@ -152,7 +152,8 @@ export default {
     },
     plugins: [
         forms,
-        require('@tailwindcss/typography'),
+        require("@tailwindcss/typography"),
         aspectRatio,
-        require("flowbite/plugin")],
+        require("flowbite/plugin"),
+    ],
 };

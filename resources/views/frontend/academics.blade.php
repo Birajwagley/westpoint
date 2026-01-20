@@ -32,7 +32,7 @@
         <!-- Image Section -->
         <div
             class="relative w-full md:w-1/2 flex justify-center items-center h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
-            <img src="{{ asset($academic->banner_image) }}" alt="GBBS"
+            <img src="{{ asset($academic->banner_image) }}" alt="WPHS"
                 class="w-full h-auto object-cover rounded-2xl shadow-lg hover:scale-[1.02] transition-transform duration-300">
         </div>
 

@@ -9,8 +9,8 @@
         <!-- Logo + Close -->
         <div class="flex items-center mb-6">
             <a href="{{ route('home') }}" class="mr-auto flex items-center gap-6">
-                <img src="{{ $setting->primary_logo ?? '' }}" alt="GBBS" class="h-14 object-contain">
-                <img src="{{ $setting->experience_logo ?? '' }}" alt="GBBS" class="h-14 object-contain">
+                <img src="{{ $setting->primary_logo ?? '' }}" alt="WPHS" class="h-14 object-contain">
+                <img src="{{ $setting->experience_logo ?? '' }}" alt="WPHS" class="h-14 object-contain">
             </a>
             <button id="close-menu" class="navbar-close">
                 <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-primary" xmlns="http://www.w3.org/2000/svg"

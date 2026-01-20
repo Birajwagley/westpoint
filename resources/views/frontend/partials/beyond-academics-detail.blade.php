@@ -179,7 +179,7 @@
                         @foreach ($allDatas as $allData)
                             <a href="{{ route($route2, $allData->slug) }}"
                                 class="flex gap-3 p-2 border-l-4 border-primary rounded-md hover:bg-gray-50 transition">
-                                <img src="{{ asset($allData->thumbnail_image) }}" alt="GBBS"
+                                <img src="{{ asset($allData->thumbnail_image) }}" alt="WPHS"
                                     class="w-20 h-16 rounded-md object-cover flex-shrink-0" />
                                 <div>
                                     <div class="font-semibold text-sm hover:text-primary transition line-clamp-2">
